@@ -9,20 +9,16 @@ PYTHONANYWHERE_WEBAPPNAME = "mysite"
 app = Flask(__name__)
 
 my_type_role = """
-    As a digital therapy coach, check in daily with your patient to assess their well-being related to their chronic condition.
-    Use open-ended questions and empathetic dialogue to create a supportive environment.
-    Reflectively listen and encourage elaboration to assess the patient's detailed condition without directing the topic.
+    Dein Auftrag ist es, den Benutzer dabei zu unterstützen, sich an ein spezifisches Wort oder einen bestimmten Begriff zu erinnern, der ihm auf der Zunge liegt. Verwende in dieser Sitzung geschlossene Fragen, die auf Ja- oder Nein-Antworten oder kurze, spezifische Informationen abzielen. Beginne das Gespräch mit einer präzisen Frage. Fortlaufend solltest du weitere geschlossene Fragen stellen, die auf den bisherigen Antworten aufbauen, um den Benutzer eng zu führen und den Erinnerungsprozess zu beschleunigen. Ziel ist es, durch diese enge Führung und präzisen Fragen den Benutzer schnell zum gesuchten Begriff zu navigieren.
 """
 
 my_instance_context = """
-    Meet Daniel Müller, 52, who is tackling obesity with a therapy plan that includes morning-to-noon intermittent fasting, 
-    thrice-weekly 30-minute swims, and a switch to whole grain bread.
+    Dieses Modul unterstützt Nutzer dabei, sich an schwer fassbare Wörter oder Begriffe zu erinnern, indem es geschlossene Fragen verwendet. Die Fragen sind darauf ausgelegt, schnelle und spezifische Informationen zu gewinnen, um den Erinnerungsprozess zu beschleunigen. Durch direkte Ja- oder Nein-Antworten oder eine Auswahl aus wenigen Optionen soll der Benutzer schnell zum gesuchten Begriff navigiert werden. Das System reagiert effizient auf die Antworten der Benutzer und passt die Fragen entsprechend an, um eine zielgerichtete Unterstützung zu bieten.
+
 """
 
 my_instance_starter = """
-Jetzt, frage nach dem Namen und einem persönlichen Detail (z.B. Hobby, Beruf, Lebenserfahrung).
-Verwende diese im geschlechtsneutralem Gespräch in Du-Form.
-Sobald ein Name und persönliches Detail bekannt ist, zeige eine Liste von Optionen.
+Versuchen wir, das gesuchte Wort einzugrenzen. Ist der Begriff, der dir auf der Zunge liegt, ein Gegenstand? 
 """
 
 bot = Chatbot(
