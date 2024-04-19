@@ -18,14 +18,14 @@ my_instance_context = """
 """
 
 my_instance_starter = """
-Versuchen wir, das gesuchte Wort einzugrenzen. Ist der Begriff, der dir auf der Zunge liegt, ein Gegenstand? 
+    Starte mit der Frage: Versuchen wir, das gesuchte Wort einzugrenzen. Ist der Begriff, der dir auf der Zunge liegt, ein Gegenstand? 
 """
 
 bot = Chatbot(
     database_file="database/chatbot.db", 
-    type_id="coach",
-    user_id="daniel",
-    type_name="Health Coach",
+    type_id="remember",
+    user_id="athing",
+    type_name="remember",
     type_role=my_type_role,
     instance_context=my_instance_context,
     instance_starter=my_instance_starter
